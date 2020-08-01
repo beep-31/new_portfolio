@@ -1,0 +1,65 @@
+// main: ../css/style.less
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
+    padding-top: 10px;
+}
+
+.header__wrapper{
+    max-width: @mobile-wrapper;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    border-bottom: 3px solid rgba(160, 146, 146, 0.5);
+}
+
+.header__nav__logo img{
+    width: 64px;
+    height: auto;
+}
+
+.header__nav__burger{
+    cursor: pointer;
+    z-index: 99;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: rgba(55, 55, 55, 0.5);
+    padding: 24px 16px;
+    border-radius: 0% 0% 0% 45%;
+}
+
+.burger__item{
+    transition: 0.1s;
+}
+
+.burger__item--closed{
+    width: 30px;
+    height: 3px;
+    position: relative;
+    background: linear-gradient( 135deg, rgba(77, 14, 249, 1) 0%, rgb(255, 255, 255) 100% );
+    transition: 0.1s linear;
+    &::after{
+        display: block;
+        content: "";
+        position: absolute;
+        top: 9px;
+        left: 0px;
+        width: 15px;
+        height: 3px;
+        background: linear-gradient( 135deg, rgba(77, 14, 249, 1) 0%, rgb(255, 255, 255) 100% );
+    }
+    &::before{
+        display: block;
+        content: "";
+        position: absolute;
+        top: -9px;
+        left: 14px;
+        width: 15px;
+        height: 3px;
+        background: linear-gradient( 135deg, rgba(77, 14, 249, 1) 0%, rgb(255, 255, 255) 100% );
+    }
+}
