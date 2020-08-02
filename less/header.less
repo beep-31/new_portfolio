@@ -63,3 +63,40 @@
         background: linear-gradient( 135deg, rgba(77, 14, 249, 1) 0%, rgb(255, 255, 255) 100% );
     }
 }
+
+.header__nav__list{
+    transition: 0.3s linear;
+    width: 20rem;
+    position: fixed;
+    top: 0;
+    right: -320px;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px;
+}
+
+.portfolio-pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    object-fit: cover;
+}
+
+.nav__item{
+    margin: 0 auto;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    font-family: 'Share Tech Mono', sans-serif;
+    &--name{
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #cecece;
+    }
+}
+
+.nav__item a{
+    color: #cecece;
+    font-size: 16px;
+}

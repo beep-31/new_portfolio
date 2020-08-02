@@ -60,6 +60,39 @@
   height: 3px;
   background: linear-gradient(135deg, #4d0ef9 0%, #ffffff 100%);
 }
+.header__nav__list {
+  transition: 0.3s linear;
+  width: 20rem;
+  position: fixed;
+  top: 0;
+  right: -320px;
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0px;
+}
+.portfolio-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+}
+.nav__item {
+  margin: 0 auto;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  font-family: 'Share Tech Mono', sans-serif;
+}
+.nav__item--name {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #cecece;
+}
+.nav__item a {
+  color: #cecece;
+  font-size: 16px;
+}
 * {
   padding: 0;
   margin: 0;
@@ -74,4 +107,27 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+html {
+  font-family: 'Share Tech', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+/* Share Tech */
+@font-face {
+  font-family: 'Share Tech';
+  src: url('../fonts/ShareTech/ShareTech-Regular.woff2') format('woff2'), url('../fonts/ShareTech/ShareTech-Regular.ttf') format('truetype'), url('../fonts/ShareTech/ShareTech-Regular.eot');
+  font-weight: 400;
+  font-style: normal;
+}
+/* Share Tech Mono */
+@font-face {
+  font-family: 'Share Tech Mono';
+  src: url('../fonts/ShareTechMono/ShareTechMono-Regular.woff2') format('woff2'), url('../fonts/ShareTechMono/ShareTechMono-Regular.ttf') format('truetype'), url('../fonts/ShareTechMono/ShareTechMono-Regular.eot');
+  font-weight: 400;
+  font-style: normal;
 }
