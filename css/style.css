@@ -40,6 +40,13 @@
   background-color: #8154eb;
   border-radius: 8px;
   color: #fafafa;
+  transition: 0.2s linear;
+}
+.intro__btn a:hover {
+  background-color: #6e38ec;
+}
+.intro__btn a:active {
+  background-color: #6e38ec;
 }
 .header {
   position: absolute;
@@ -121,6 +128,7 @@
 .header__nav__list {
   transition: 0.3s linear;
   width: 20rem;
+  height: 100vh;
   position: fixed;
   top: 0;
   right: -320px;
