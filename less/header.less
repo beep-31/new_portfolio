@@ -64,6 +64,26 @@
     }
 }
 
+.burger__item--opened{
+    width: 30px;
+    height: 3px;
+    position: relative;
+    background: linear-gradient( 135deg, rgba(77, 14, 249, 1) 0%, rgb(255, 255, 255) 100% );
+    transform: rotate(-45deg);
+    border-radius: 2px;
+    transition: 0.1s linear;
+    &::before{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 3px;
+        position: absolute;
+        background: linear-gradient( 135deg, rgba(77, 14, 249, 1) 0%, rgb(255, 255, 255) 100% );
+        transform: rotate(90deg);
+        border-radius: 2px;
+    }
+}
+
 .header__nav__list{
     transition: 0.3s linear;
     width: 20rem;

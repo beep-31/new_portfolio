@@ -3,5 +3,51 @@
 .intro{
     background: linear-gradient(135deg, rgba(0,64,77,0.9) 0%, rgba(0,0,0,0.8) 100%),
                 url('../img/landing.png') center no-repeat;
-    padding: 50px 0px;
+    background-size: contain;
+    padding: 100px 0px;
+}
+
+.intro__wrapper{
+    max-width: @mobile-wrapper;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.intro__txt{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.intro__heading{
+    color: #fafafa;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.intro__info {
+    font-size: 32px;
+    background: -webkit-linear-gradient(#fc5417, #7c1fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+}
+
+.intro__skills{
+    color: #fafafa;
+    font-size: 20px;
+    font-family: 'Share Tech Mono', sans-serif;
+    margin-bottom: 50px;
+}
+
+.intro__btn{
+    text-align: center;
+}
+
+.intro__btn a{
+    padding: 14px;
+    background-color: #8154eb;
+    border-radius: 8px;
+    color: #fafafa;
 }
