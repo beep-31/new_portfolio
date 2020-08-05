@@ -12,6 +12,10 @@
     max-width: @mobile-wrapper;
     margin: 0 auto;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro__txt{
@@ -39,7 +43,7 @@
     color: #fafafa;
     font-size: 20px;
     font-family: 'Share Tech Mono', sans-serif;
-    margin-bottom: 50px;
+    margin-bottom: 85px;
 }
 
 .intro__btn{
@@ -58,4 +62,11 @@
     &:active{
         background-color: #6e38ec;
     }
+}
+
+.intro__arrow svg{
+    fill: #cecece;
+    width: 40px;
+    height: 40px;
+    margin-top: 130px;
 }
