@@ -216,10 +216,10 @@
                     </li>
                     <div class="nav__top">
                         <li class="nav__item nav__item--name">Alex Shcheglov</li>
-                        <li class="nav__item"><a href="">About Me</a></li>
-                        <li class="nav__item"><a href="">Services</a></li>
-                        <li class="nav__item"><a href="">Projects</a></li>
-                        <li class="nav__item"><a href="">Contact</a></li>
+                        <li class="nav__item"><a href="#about">About Me</a></li>
+                        <li class="nav__item"><a href="#skill">Services</a></li>
+                        <li class="nav__item"><a href="#projects">Projects</a></li>
+                        <li class="nav__item"><a href="#contact">Contact</a></li>
                     </div>
                     <div class="nav__bottom">
                         <div class="nav__social">
@@ -251,7 +251,7 @@
         </div>
     </header>
     <main>
-        <section class="intro">
+        <section class="intro" id="intro">
             <div class="intro__wrapper">
                 <div class="intro__txt">
                     <h1 class="intro__heading">Alex Shcheglov</h1>
@@ -259,7 +259,7 @@
                     <p class="intro__skills">HTML . CSS . JavaScript . Python</p>
                 </div>
                 <div class="intro__btn">
-                    <a href="">Get in Touch</a>
+                    <a href="#contact">Get in Touch</a>
                 </div>
                 <div class="intro__arrow">
                     <a href="#about">
@@ -452,12 +452,64 @@
                     <p>To work with me, write 'Gig' in the title</p>
                 </div>
                 <div class="contact__form">
-                    <form action="#">
-                        
+                    <form action="#" id="form">
+                        <div class="contact__form__input">
+                            <input type="text" class="name-input" id="input__name" name="name" autocomplete="off" required>
+                            <label for="name" class="input__label" id="name__label">Name*</label>
+                        </div>
+                        <div class="contact__form__input contact__form__input--email">
+                            <input type="email" id="input__email" name="email" autocomplete="off" required>
+                            <label for="email" class="input__label" id="email__label">Email*</label>
+                        </div>
+                        <div class="contact__form__input contact__form__input--title">
+                            <input type="text" class="title-input" id="input__title" name="title" autocomplete="off" required>
+                            <label for="title" class="input__label" id="title__label">Title</label>
+                        </div>
+                        <div class="contact__form__textarea">
+                            <textarea name="textarea" id="textarea" required></textarea>
+                            <label for="textarea">Message</label>
+                        </div>
+                        <div class="contact__form__button">
+                            <button type="submit">Get In Touch</button>
+                        </div>
                     </form>
                 </div>
             </div>
+            <footer class="footer" id="footer">
+                <div class="footer__wrapper">
+                    <div class="footer__nav">
+                        <a href="#intro" class="footer__nav__item">Home</a>
+                        <a href="#about" class="footer__nav__item">About</a>
+                        <a href="#skill" class="footer__nav__item">Services</a>
+                        <a href="#projects" class="footer__nav__item">Projects</a>
+                        <a href="#contact" class="footer__nav__item">Contact</a>
+                    </div>
+                    <div class="footer__txt">
+                        <p>
+                            Built with pure HTML, CSS and JavaScript
+                        </p>
+                    </div>
+                    <div class="footer__social">
+                        <a href="" class="footer__social__item">
+                            <svg>
+                                <use xlink:href="#insta">
+                            </svg>
+                        </a>
+                        <a href="" class="footer__social__item">
+                            <svg>
+                                <use xlink:href="#linked">
+                            </svg>
+                        </a>
+                        <a href="" class="footer__social__item">
+                            <svg>
+                                <use xlink:href="#github">
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </footer>
         </section>
+
     </main>
     <script src="../scripts/main.js"></script>
 </body>
