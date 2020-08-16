@@ -4,6 +4,7 @@
     background: linear-gradient(135deg, rgba(0,64,77,0.9) 0%, rgba(0,0,0,0.8) 100%),
                 url('../img/landing.png') center no-repeat;
     background-size: contain;
+    background-color: #2c3e50;
     padding: 100px 0px;
     height: 100vh;
 }
@@ -69,4 +70,64 @@
     width: 40px;
     height: 40px;
     margin-top: 130px;
+}
+
+@media (min-width: @tablet-width){
+    .intro__wrapper{
+        max-width: @tablet-wrapper;
+    }
+
+    .intro__heading{
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .intro__skills{
+        font-size: 24px;
+        margin-bottom: 100px;
+    }
+
+    .intro__info{
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    .intro__txt{
+        margin-top: 100px;
+    }
+
+    .intro__arrow svg{
+        margin-top: 90px;
+    }
+}
+
+@media (min-width: @desktop-width){
+
+    .intro{
+        position: relative;
+    }
+    .intro__wrapper{
+        max-width: @desktop-width;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .intro__heading{
+        font-size: 50px;
+    }
+
+    .intro__skills{
+        font-size: 50px;
+    }
+
+    .intro__info{
+        font-size: 50px;
+    }
+
+    .intro__btn a{
+        padding: 18px;
+    }
+
 }

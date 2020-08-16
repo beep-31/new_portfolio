@@ -34,3 +34,49 @@ svg{
     box-shadow: 0 20px 30px 0 rgba(0, 255, 255, 0.30);
 }
 
+.about__langs{
+    width: 170px;
+    display: flex;
+    margin-top: 60px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.lang{
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.3s linear;
+    background-color: transparent;
+    &--active{
+        background-color: rgba(0, 152, 182, 0.9);
+    }
+}
+
+.about__txt{
+    display: none;
+    opacity: 0;
+    transition: 0.3s linear;
+    &--active{
+        display: block;
+        opacity: 1;
+    }
+}
+
+@media (min-width: @tablet-width){
+    .about__wrapper{
+        max-width: @tablet-wrapper;
+    }
+
+    .about__txt{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: @desktop-width){
+    .about__wrapper{
+        max-width: @desktop-wrapper - 300px;
+        text-align: center;
+    }
+}
+
+

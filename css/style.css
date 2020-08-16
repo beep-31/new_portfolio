@@ -1,6 +1,7 @@
 .intro {
   background: linear-gradient(135deg, rgba(0, 64, 77, 0.9) 0%, rgba(0, 0, 0, 0.8) 100%), url('../img/landing.png') center no-repeat;
   background-size: contain;
+  background-color: #2c3e50;
   padding: 100px 0px;
   height: 100vh;
 }
@@ -58,6 +59,53 @@
   width: 40px;
   height: 40px;
   margin-top: 130px;
+}
+@media (min-width: 768px) {
+  .intro__wrapper {
+    max-width: 648px;
+  }
+  .intro__heading {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .intro__skills {
+    font-size: 24px;
+    margin-bottom: 100px;
+  }
+  .intro__info {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  .intro__txt {
+    margin-top: 100px;
+  }
+  .intro__arrow svg {
+    margin-top: 90px;
+  }
+}
+@media (min-width: 1280px) {
+  .intro {
+    position: relative;
+  }
+  .intro__wrapper {
+    max-width: 1280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .intro__heading {
+    font-size: 50px;
+  }
+  .intro__skills {
+    font-size: 50px;
+  }
+  .intro__info {
+    font-size: 50px;
+  }
+  .intro__btn a {
+    padding: 18px;
+  }
 }
 .header {
   position: absolute;
@@ -191,6 +239,16 @@
   color: #cecece;
   font-size: 16px;
 }
+@media (min-width: 768px) {
+  .header__wrapper {
+    max-width: 648px;
+  }
+}
+@media (min-width: 1280px) {
+  .header__wrapper {
+    max-width: 1200px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -212,6 +270,7 @@ ul {
 html {
   font-family: 'Share Tech', sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -276,6 +335,45 @@ svg {
 }
 .about__img img {
   box-shadow: 0 20px 30px 0 rgba(0, 255, 255, 0.3);
+}
+.about__langs {
+  width: 170px;
+  display: flex;
+  margin-top: 60px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.lang {
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.3s linear;
+  background-color: transparent;
+}
+.lang--active {
+  background-color: rgba(0, 152, 182, 0.9);
+}
+.about__txt {
+  display: none;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+.about__txt--active {
+  display: block;
+  opacity: 1;
+}
+@media (min-width: 768px) {
+  .about__wrapper {
+    max-width: 648px;
+  }
+  .about__txt {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1280px) {
+  .about__wrapper {
+    max-width: 900px;
+    text-align: center;
+  }
 }
 .skill {
   background: linear-gradient(135deg, rgba(0, 64, 77, 0.9) 0%, rgba(0, 0, 0, 0.8) 100%);
@@ -454,8 +552,17 @@ svg {
   top: -10px;
   font-size: 10px;
 }
+.contact__form__input label:focus {
+  top: -10px;
+  font-size: 10px;
+}
 .contact__form__button {
   text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100px;
 }
 .contact__form__button button {
   padding: 10px 50px;
@@ -466,14 +573,13 @@ svg {
   text-transform: uppercase;
   font-family: 'Share Tech Mono', sans-serif;
   background-color: #8154eb;
-  margin-top: 50px;
 }
 .footer__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 100px;
+  height: 150px;
   color: #cecece;
 }
 .footer__wrapper a {
