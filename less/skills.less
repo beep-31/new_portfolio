@@ -36,7 +36,53 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // justify-content: center;
     text-align: center;
     margin-bottom: 32px;
+}
+
+@media (min-width:@tablet-width){
+
+    .skill__wrapper{
+        max-width: @tablet-wrapper;
+    }
+
+    .skill__heading{
+        text-transform: uppercase;
+        font-size: 36px;
+        letter-spacing: 7px;
+    }
+
+    .skill__blocks{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .skill__block{
+        width: 50%;
+        max-width: 300px;
+        margin: 20px auto;
+    }
+}
+
+@media (min-width:@desktop-width){
+    .skill__wrapper{
+        max-width: @desktop-wrapper;
+    }
+
+    .skill__block{
+        width: 25%;
+        max-width: 200px;
+    }
+
+    .skill__block__heading{
+        margin-bottom: 8px;
+    }
+
+    .skill__intro{
+        font-size: 20px;
+    }
+
+    .skill__blocks{
+        padding: 100px 0px;
+    }
 }

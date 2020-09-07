@@ -50,6 +50,16 @@ slider.addEventListener('click', function(event){
     }
 });
 
+//projects reverse class
+
+let projects = document.querySelectorAll('.project__block');
+
+for (let i=1;i<=projects.length;i=i+2){
+    projects[i].classList.add('project__block--reverse')
+}
+
+
+
 //contact form
 
 let mail_input = document.querySelector('#input__email'),

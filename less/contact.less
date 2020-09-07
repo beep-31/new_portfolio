@@ -102,4 +102,29 @@
     text-transform: uppercase;
     font-family: 'Share Tech Mono', sans-serif;
     background-color: #8154eb;
+    cursor: pointer;
+    transition: 0.1s linear;
+    &:hover{
+        background-color: #6b37e4;
+        border: 3px solid #bebebe;
+    }
+}
+
+@media (min-width: @tablet-width){
+    .contact__txt h3{
+        font-size: 36px;
+    }
+
+    .contact__txt p{
+        font-size: 20px;
+    }
+    .contact__wrapper{
+        max-width: @tablet-wrapper;
+    }
+}
+
+@media (min-width: @desktop-width){
+    .contact__wrapper{
+        max-width: @desktop-wrapper - 400px;
+    }
 }
